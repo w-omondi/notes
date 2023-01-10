@@ -1,0 +1,12 @@
+
+- Bottom navigations
+- Two fragments
+- Product detail screen(API call)
+	Pass SKEY in your headers
+
+- Ng'ang'a - 9:00am - 11:00am  - android developer;
+	Meeting YD - Review work 
+
+- Kibonzo  - 12:00pm - 2:00PM  - android developer
+	Meeting YD - Review work
+

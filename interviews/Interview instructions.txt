@@ -1,0 +1,23 @@
+1. Initialise a new repository.
+2. Invite me to the new repository initialized.
+3. Use the new repository to do all the interview workings.
+
+- Implement two fragments pointed out in the Figma design.
+- Make an API call on the product details page which is among the fragments designed.
+
+	- Use that provided by the API to populate the page.
+	- The endpoint of API you should be hitting: https://test.yellowdotenergy.com/getProducts
+	- The API is a POST and the body looks like this.
+
+                    {
+                        _id: "63623c98d7c8dd6904cf7ef5",
+                        fields: [
+                            "_id", "name", "description", "price", "colors",
+				            "keyDetails", 'sku', "keyFeatures", "image",
+				            "otherImages", "shop", "weight", "dimension", "productDataSheet".
+                        ]
+                    }
+
+     - You can also pass the fields you want back into the fields in the request body as shown above.
+
+4. That's all, SUCCESS.

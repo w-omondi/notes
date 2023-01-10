@@ -1,0 +1,28 @@
+docker run -d  --name yd_sendy_api_test --restart unless-stopped -p 8660:8001 yellowdotacr.azurecr.io/yellowdot-sendy-api:dev 
+
+docker run -d  --name yd_sendy_api_staging --restart unless-stopped -p 8665:8001 yellowdotacr.azurecr.io/yellowdot-sendy-api:release  
+
+docker run -d  --name yd_sendy_api_prod --restart unless-stopped -p 8664:8001 yellowdotacr.azurecr.io/yellowdot-sendy-api:prod 
+
+
+docker stop yd_sendy_api_staging
+
+docker rm yd_sendy_api_staging
+
+docker stop yd_sendy_api_prod
+
+docker rm yd_sendy_api_prod
+
+docker stop yd_sendy_api_test
+
+docker rm yd_sendy_api_test
+
+
+docker run -d  --name yd_sendy_api_test --restart unless-stopped -p 8660:80 yellowdot-sendy-api:dev 
+
+docker run -d  --name yd_sendy_api_staging --restart unless-stopped -p 8661:80 yellowdot-sendy-api:release 
+
+docker run -d  --name yd_sendy_api_prod --restart unless-stopped -p 8664:80 yellowdot-sendy-api:prod 
+
+
+
